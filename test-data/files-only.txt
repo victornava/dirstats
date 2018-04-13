@@ -1,0 +1,19 @@
+Total size: 1.63 KB
+Total items: 4
+Total files: 3
+Total directories: 1
+
+Top files by size:
+
+752 B files-only/tres
+564 B files-only/uno
+188 B files-only/dos
+
+Top directories by size:
+
+1.63 KB files-only
+
+Top directories by file count:
+
+3 files-only
+

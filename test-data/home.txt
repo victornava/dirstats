@@ -1,0 +1,74 @@
+Total size: 14.29 MB
+Total items: 373
+Total files: 337
+Total directories: 36
+
+Top files by size:
+
+97.63 KB home/Music/Guaco/Amazonas/11 Ese Rumbo Es De Los Dos.mp3
+97.40 KB home/Pictures/2014/IMG_5283.JPG
+97.26 KB home/Music/Bonobo/Black Sands/01 Prelude.m4a
+96.85 KB home/Pictures/2016/20160211-IMG_0382.JPG
+96.66 KB home/Pictures/2015/20150127-IMG_7291.JPG
+96.66 KB home/Music/Bonobo/Dial 'M' for Monkey/09 Light Pattern.mp3
+96.48 KB home/Music/TOOL/10000 Days/01 Vicarious.mp3
+96.34 KB home/Pictures/2017/IMG_1067.JPG
+95.65 KB home/Music/Bonobo/Migration/04 Grains.mp3
+95.61 KB home/Music/Bonobo/Migration/06 Surface (Feat. Nicole Miglis).mp3
+95.29 KB home/Music/Guaco/Archipielago/04 No La Juzgue.mp3
+95.06 KB home/Music/Draco/Teatro Del Absurdo/05 Aleluyah.mp3
+94.87 KB home/Pictures/2015/20150126-IMG_7286.JPG
+94.69 KB home/Pictures/2016/20160211-IMG_0366.JPG
+94.50 KB home/Music/Guaco/Amazonas/07 Si Usted La Viera.mp3
+93.82 KB home/Music/Draco/Amor Vincit Omnia/01 Esto Es Vida.mp3.mp3
+93.54 KB home/Music/Draco/Teatro Del Absurdo/13 I Come Before You.mp3
+93.31 KB home/Music/TOOL/10000 Days/04 10,000 Days [Part 2].mp3
+93.22 KB home/Pictures/2015/20150205-IMG_0033.JPG
+93.04 KB home/Music/TOOL/Undertow/10 Disgustipated.mp3
+
+Top directories by size:
+
+14.29 MB  home
+9.12 MB   home/Music
+4.96 MB   home/Pictures
+2.81 MB   home/Music/TOOL
+2.73 MB   home/Music/Draco
+2.41 MB   home/Music/Bonobo
+2.08 MB   home/Pictures/2014
+1.63 MB   home/Pictures/2015
+1.18 MB   home/Music/Guaco
+859.49 KB home/Music/Draco/Teatro Del Absurdo
+842.51 KB home/Music/Draco/Mad Love
+823.55 KB home/Pictures/2016
+750.86 KB home/Music/Bonobo/Migration
+745.11 KB home/Music/Draco/Vagabundo
+712.00 KB home/Music/TOOL/ÆNEMA
+701.18 KB home/Music/Guaco/Amazonas
+696.09 KB home/Music/TOOL/10000 Days
+683.21 KB home/Music/TOOL/Lateralus
+663.01 KB home/Music/Bonobo/The North Borders
+586.15 KB home/Music/Bonobo/Black Sands
+
+Top directories by file count:
+
+372 home
+196 home/Music
+112 home/Pictures
+60  home/Music/TOOL
+55  home/Music/Draco
+55  home/dev
+51  home/Music/Bonobo
+44  home/Pictures/2014
+32  home/Pictures/2015
+26  home/Music/Guaco
+20  home/dev/random-sentence
+20  home/Pictures/2016
+15  home/Music/TOOL/ÆNEMA
+14  home/Music/Draco/Vagabundo
+14  home/Music/Draco/Teatro Del Absurdo
+14  home/Music/Draco/Mad Love
+14  home/dev/quick-brown-fox-bot
+13  home/Music/TOOL/Lateralus
+13  home/Music/Bonobo/Migration
+13  home/Music/Bonobo/The North Borders
+

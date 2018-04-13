@@ -1,0 +1,21 @@
+Total size: 1.45 KB
+Total items: 5
+Total files: 3
+Total directories: 2
+
+Top files by size:
+
+846 B symlinks-and-other-weird-stuff/stuff/file
+376 B symlinks-and-other-weird-stuff/.hidden-file
+6 B   symlinks-and-other-weird-stuff/symlink-to-stuff
+
+Top directories by size:
+
+1.45 KB symlinks-and-other-weird-stuff
+942 B   symlinks-and-other-weird-stuff/stuff
+
+Top directories by file count:
+
+4 symlinks-and-other-weird-stuff
+1 symlinks-and-other-weird-stuff/stuff
+

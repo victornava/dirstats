@@ -1,0 +1,16 @@
+Total size: 64 B
+Total items: 1
+Total files: 0
+Total directories: 1
+
+Top files by size:
+
+
+Top directories by size:
+
+64 B empty
+
+Top directories by file count:
+
+0 empty
+

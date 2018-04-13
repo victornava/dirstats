@@ -1,0 +1,372 @@
+{
+  "total_items": 373,
+  "total_files": 337,
+  "total_dirs": 36,
+  "total_size": 14979102,
+  "top_files_by_size": [
+    {
+      "path": "home/Music/Guaco/Amazonas/11 Ese Rumbo Es De Los Dos.mp3",
+      "size": 99969,
+      "directory?": false,
+      "file_count": 0
+    },
+    {
+      "path": "home/Pictures/2014/IMG_5283.JPG",
+      "size": 99734,
+      "directory?": false,
+      "file_count": 0
+    },
+    {
+      "path": "home/Music/Bonobo/Black Sands/01 Prelude.m4a",
+      "size": 99593,
+      "directory?": false,
+      "file_count": 0
+    },
+    {
+      "path": "home/Pictures/2016/20160211-IMG_0382.JPG",
+      "size": 99170,
+      "directory?": false,
+      "file_count": 0
+    },
+    {
+      "path": "home/Pictures/2015/20150127-IMG_7291.JPG",
+      "size": 98982,
+      "directory?": false,
+      "file_count": 0
+    },
+    {
+      "path": "home/Music/Bonobo/Dial 'M' for Monkey/09 Light Pattern.mp3",
+      "size": 98982,
+      "directory?": false,
+      "file_count": 0
+    },
+    {
+      "path": "home/Music/TOOL/10000 Days/01 Vicarious.mp3",
+      "size": 98794,
+      "directory?": false,
+      "file_count": 0
+    },
+    {
+      "path": "home/Pictures/2017/IMG_1067.JPG",
+      "size": 98653,
+      "directory?": false,
+      "file_count": 0
+    },
+    {
+      "path": "home/Music/Bonobo/Migration/04 Grains.mp3",
+      "size": 97948,
+      "directory?": false,
+      "file_count": 0
+    },
+    {
+      "path": "home/Music/Bonobo/Migration/06 Surface (Feat. Nicole Miglis).mp3",
+      "size": 97901,
+      "directory?": false,
+      "file_count": 0
+    },
+    {
+      "path": "home/Music/Guaco/Archipielago/04 No La Juzgue.mp3",
+      "size": 97572,
+      "directory?": false,
+      "file_count": 0
+    },
+    {
+      "path": "home/Music/Draco/Teatro Del Absurdo/05 Aleluyah.mp3",
+      "size": 97337,
+      "directory?": false,
+      "file_count": 0
+    },
+    {
+      "path": "home/Pictures/2015/20150126-IMG_7286.JPG",
+      "size": 97149,
+      "directory?": false,
+      "file_count": 0
+    },
+    {
+      "path": "home/Pictures/2016/20160211-IMG_0366.JPG",
+      "size": 96961,
+      "directory?": false,
+      "file_count": 0
+    },
+    {
+      "path": "home/Music/Guaco/Amazonas/07 Si Usted La Viera.mp3",
+      "size": 96773,
+      "directory?": false,
+      "file_count": 0
+    },
+    {
+      "path": "home/Music/Draco/Amor Vincit Omnia/01 Esto Es Vida.mp3.mp3",
+      "size": 96068,
+      "directory?": false,
+      "file_count": 0
+    },
+    {
+      "path": "home/Music/Draco/Teatro Del Absurdo/13 I Come Before You.mp3",
+      "size": 95786,
+      "directory?": false,
+      "file_count": 0
+    },
+    {
+      "path": "home/Music/TOOL/10000 Days/04 10,000 Days [Part 2].mp3",
+      "size": 95551,
+      "directory?": false,
+      "file_count": 0
+    },
+    {
+      "path": "home/Pictures/2015/20150205-IMG_0033.JPG",
+      "size": 95457,
+      "directory?": false,
+      "file_count": 0
+    },
+    {
+      "path": "home/Music/TOOL/Undertow/10 Disgustipated.mp3",
+      "size": 95269,
+      "directory?": false,
+      "file_count": 0
+    }
+  ],
+  "top_dirs_by_size": [
+    {
+      "path": "home",
+      "size": 14979102,
+      "directory?": true,
+      "file_count": 372
+    },
+    {
+      "path": "home/Music",
+      "size": 9565895,
+      "directory?": true,
+      "file_count": 196
+    },
+    {
+      "path": "home/Pictures",
+      "size": 5196981,
+      "directory?": true,
+      "file_count": 112
+    },
+    {
+      "path": "home/Music/TOOL",
+      "size": 2945068,
+      "directory?": true,
+      "file_count": 60
+    },
+    {
+      "path": "home/Music/Draco",
+      "size": 2858223,
+      "directory?": true,
+      "file_count": 55
+    },
+    {
+      "path": "home/Music/Bonobo",
+      "size": 2523408,
+      "directory?": true,
+      "file_count": 51
+    },
+    {
+      "path": "home/Pictures/2014",
+      "size": 2176820,
+      "directory?": true,
+      "file_count": 44
+    },
+    {
+      "path": "home/Pictures/2015",
+      "size": 1705872,
+      "directory?": true,
+      "file_count": 32
+    },
+    {
+      "path": "home/Music/Guaco",
+      "size": 1239004,
+      "directory?": true,
+      "file_count": 26
+    },
+    {
+      "path": "home/Music/Draco/Teatro Del Absurdo",
+      "size": 880117,
+      "directory?": true,
+      "file_count": 14
+    },
+    {
+      "path": "home/Music/Draco/Mad Love",
+      "size": 862727,
+      "directory?": true,
+      "file_count": 14
+    },
+    {
+      "path": "home/Pictures/2016",
+      "size": 843320,
+      "directory?": true,
+      "file_count": 20
+    },
+    {
+      "path": "home/Music/Bonobo/Migration",
+      "size": 768883,
+      "directory?": true,
+      "file_count": 13
+    },
+    {
+      "path": "home/Music/Draco/Vagabundo",
+      "size": 762993,
+      "directory?": true,
+      "file_count": 14
+    },
+    {
+      "path": "home/Music/TOOL/ÆNEMA",
+      "size": 729091,
+      "directory?": true,
+      "file_count": 15
+    },
+    {
+      "path": "home/Music/Guaco/Amazonas",
+      "size": 718012,
+      "directory?": true,
+      "file_count": 11
+    },
+    {
+      "path": "home/Music/TOOL/10000 Days",
+      "size": 712795,
+      "directory?": true,
+      "file_count": 11
+    },
+    {
+      "path": "home/Music/TOOL/Lateralus",
+      "size": 699605,
+      "directory?": true,
+      "file_count": 13
+    },
+    {
+      "path": "home/Music/Bonobo/The North Borders",
+      "size": 678925,
+      "directory?": true,
+      "file_count": 13
+    },
+    {
+      "path": "home/Music/Bonobo/Black Sands",
+      "size": 600215,
+      "directory?": true,
+      "file_count": 12
+    }
+  ],
+  "top_dirs_by_file_count": [
+    {
+      "path": "home",
+      "size": 14979102,
+      "directory?": true,
+      "file_count": 372
+    },
+    {
+      "path": "home/Music",
+      "size": 9565895,
+      "directory?": true,
+      "file_count": 196
+    },
+    {
+      "path": "home/Pictures",
+      "size": 5196981,
+      "directory?": true,
+      "file_count": 112
+    },
+    {
+      "path": "home/Music/TOOL",
+      "size": 2945068,
+      "directory?": true,
+      "file_count": 60
+    },
+    {
+      "path": "home/Music/Draco",
+      "size": 2858223,
+      "directory?": true,
+      "file_count": 55
+    },
+    {
+      "path": "home/dev",
+      "size": 27340,
+      "directory?": true,
+      "file_count": 55
+    },
+    {
+      "path": "home/Music/Bonobo",
+      "size": 2523408,
+      "directory?": true,
+      "file_count": 51
+    },
+    {
+      "path": "home/Pictures/2014",
+      "size": 2176820,
+      "directory?": true,
+      "file_count": 44
+    },
+    {
+      "path": "home/Pictures/2015",
+      "size": 1705872,
+      "directory?": true,
+      "file_count": 32
+    },
+    {
+      "path": "home/Music/Guaco",
+      "size": 1239004,
+      "directory?": true,
+      "file_count": 26
+    },
+    {
+      "path": "home/dev/random-sentence",
+      "size": 10262,
+      "directory?": true,
+      "file_count": 20
+    },
+    {
+      "path": "home/Pictures/2016",
+      "size": 843320,
+      "directory?": true,
+      "file_count": 20
+    },
+    {
+      "path": "home/Music/TOOL/ÆNEMA",
+      "size": 729091,
+      "directory?": true,
+      "file_count": 15
+    },
+    {
+      "path": "home/Music/Draco/Vagabundo",
+      "size": 762993,
+      "directory?": true,
+      "file_count": 14
+    },
+    {
+      "path": "home/Music/Draco/Teatro Del Absurdo",
+      "size": 880117,
+      "directory?": true,
+      "file_count": 14
+    },
+    {
+      "path": "home/Music/Draco/Mad Love",
+      "size": 862727,
+      "directory?": true,
+      "file_count": 14
+    },
+    {
+      "path": "home/dev/quick-brown-fox-bot",
+      "size": 7784,
+      "directory?": true,
+      "file_count": 14
+    },
+    {
+      "path": "home/Music/TOOL/Lateralus",
+      "size": 699605,
+      "directory?": true,
+      "file_count": 13
+    },
+    {
+      "path": "home/Music/Bonobo/Migration",
+      "size": 768883,
+      "directory?": true,
+      "file_count": 13
+    },
+    {
+      "path": "home/Music/Bonobo/The North Borders",
+      "size": 678925,
+      "directory?": true,
+      "file_count": 13
+    }
+  ]
+}

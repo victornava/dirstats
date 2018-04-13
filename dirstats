@@ -1,0 +1,180 @@
+#!/usr/bin/env ruby
+
+require 'erb'
+require 'find'
+require 'json'
+require 'optparse'
+require 'pathname'
+
+AVAILABLE_FORMATS = %w{text json}
+DEFAULTS = {
+  top: 20,
+  output_format: 'text',
+  dump_items: false
+}
+
+def main
+  options  = process_options
+  root_dir = get_root_dir(ARGV.first)
+  items    = find_items(root_dir)
+
+  if options[:dump_items]
+    JSON.pretty_generate(items)
+  else
+    make_report(items, options[:top], options[:output_format])
+  end
+end
+
+private
+
+def process_options  
+  options = {}
+
+  OptionParser.new do |opts|
+    opts.banner = "Usage: distats DIRECTORY [options]"
+
+    opts.on("--top NUMBER", Integer, "Number of top items to show") do |n|
+      options[:top] = n
+    end
+
+    opts.on("--output-format FORMAT", String, "Output format: #{AVAILABLE_FORMATS.join(', ')}") do |f|
+      if f && AVAILABLE_FORMATS.include?(f.downcase)
+          options[:output_format] = f.downcase
+      else
+        error "Invalid format. Your options are: #{AVAILABLE_FORMATS.join(', ')}"
+        exit
+      end
+    end
+    
+    opts.on("--dump-items", "List all items in json format") do
+      options[:dump_items] = true
+    end
+
+    opts.on("--help", "Print this help") do
+      puts opts
+      exit
+    end
+  end.parse!
+
+  DEFAULTS.merge(options)
+end
+
+def get_root_dir(dir)
+  if !dir
+    '.'
+  elsif File.directory?(dir)
+    # Remove trailing slash
+    dir.sub(/\/$/,'')
+  else
+    error "First argument must be a Directory if given."
+    exit
+  end
+end
+
+def find_items(root_dir)
+  items = {}
+
+  Find.find(root_dir) do |path|
+    begin
+      items[path] = {
+        path: path,
+        size: File.lstat(path).size,
+        directory?: File.lstat(path).directory?,
+        file_count: 0
+      }      
+    rescue Exception => e
+      STDERR.puts "Skipping #{path} (#{e.message})"
+      Find.prune
+    end
+  end
+
+  items.each do |path, item|
+    # Update stats of enclosing dirs in item
+    Pathname.new(File.dirname(path)).ascend do |path_name|
+      if path_name.to_s.include?(root_dir)
+        dir = items[path_name.to_s]
+        dir[:file_count] += 1
+        dir[:size] += item[:size]
+      end
+    end
+  end
+
+  items.values
+end
+
+def make_report(items, top, output_format)
+  dirs, files = items.partition { |item| item[:directory?] }
+
+  report = {
+    total_items: items.size,
+    total_files: files.size,
+    total_dirs: dirs.size,
+    total_size: items.max_by { |item| item[:size] }[:size],
+    top_files_by_size: files.sort_by { |x| -x[:size] }.first(top),
+    top_dirs_by_size: dirs.sort_by { |x| -x[:size] }.first(top),
+    top_dirs_by_file_count: dirs.sort_by { |x| -x[:file_count] }.first(top)    
+  }
+
+  self.send("format_#{output_format}", report)
+end
+
+def format_json(report)
+  JSON.pretty_generate(report)
+end
+
+def format_text(report)
+  template = <<-REPORT.gsub(/^  /, '')
+  Total size: <%= report[:total_size].to_human_size %>
+  Total items: <%= report[:total_items] %>
+  Total files: <%= report[:total_files] %>
+  Total directories: <%= report[:total_dirs] %>
+
+  Top files by size:
+
+  <%- margin = report[:top_files_by_size].map { |x| x[:size].to_human_size.size }.max -%>
+  <%- report[:top_files_by_size].each do |item| -%>
+  <%= item[:size].to_human_size.ljust(margin) %> <%= item[:path] %>
+  <%- end -%>
+
+  Top directories by size:
+
+  <%- margin = report[:top_dirs_by_size].map { |x| x[:size].to_human_size.size }.max -%>
+  <%- report[:top_dirs_by_size].each do |item| -%>
+  <%= item[:size].to_human_size.ljust(margin) %> <%= item[:path] %>
+  <%- end -%>
+
+  Top directories by file count:
+
+  <%- margin = report[:top_dirs_by_file_count].map { |item| item[:file_count].to_s.size }.max -%>
+  <%- report[:top_dirs_by_file_count].each do |item| -%>
+  <%= item[:file_count].to_s.ljust(margin) %> <%= item[:path] %>
+  <%- end -%>
+
+  REPORT
+
+  ERB.new(template, nil, '-').result(binding)
+end
+
+def error(message)
+  puts "ERROR: #{message}"
+end
+
+
+class Numeric
+  def to_human_size
+    kilo = 1024
+    mega = 1048576
+    giga = 1073741824
+    n = self.to_f
+
+    case
+    when n < 0    then '0 B'
+    when n < kilo then "%i B" % n
+    when n < mega then "%.2f KB" % (n / kilo).round(2)
+    when n < giga then "%.2f MB" % (n / mega).round(2)
+    else               "%.2f GB" % (n / giga).round(2)
+    end
+  end
+end
+
+puts main
