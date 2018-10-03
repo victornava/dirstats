@@ -29,7 +29,7 @@ Then use it as a regular command.
   
 ## Usage
 
-    distats DIRECTORY [options]
+    dirstats DIRECTORY [options]
       --top NUMBER                 Number of top items to show
       --output-format FORMAT       Output format: text, json
       --dump-items                 List all items in json format
@@ -39,7 +39,7 @@ Then use it as a regular command.
 
 Running:
 
-    distats test-data
+    dirstats test-data
 
 Would scan all files in the directory `test-data` and produce:
 
