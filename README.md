@@ -12,7 +12,7 @@ Statistics include:
 - Top directories by size
 - Top directories by file count
 
-Written in Ruby. Tested on MacOS.
+Written in Ruby. Tested on MacOS and Ubuntu.
 
 ## Installation
 
